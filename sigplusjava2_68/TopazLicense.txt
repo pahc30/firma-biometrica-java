@@ -1,0 +1,52 @@
+License Agreement and Limited Warranty
+
+IMPORTANT:  Read this License Agreement and Limited Warranty (hereafter, the “Agreement”) before continuing to load any Topaz software, or before using any third-party software containing any Topaz software (hereafter, the “Software”).  By loading or using Topaz Software, you are accepting the terms of this Agreement between you, the Licensee, and Topaz Systems, Inc. (“Topaz”), the Licensor. If you do not agree to the terms of this agreement, do not load the Software and promptly return or delete it. If you do not agree to the terms of this Agreement, you have no right to use the Software in any way whatsoever.
+
+
+1. Limited Use License: Topaz grants you the right to use the Software for use with, and only for use with, bona-fide Topaz electronic signature pads. The Software is owned for distribution exclusively by Topaz and is protected by the United States Patent and Trademark laws and international treaties.
+
+
+2. Governing Law, Jurisdiction, and Forum:  This Agreement and any questions, claims, disputes, or litigation concerning or arising from this Agreement shall be governed by the laws of the State of California. The exclusive forum and venue for any dispute concerning or arising from this Agreement shall be any court of competent jurisdiction in the city of Los Angeles, California. 
+
+
+3. YOU MAY:
+(a) Freely use, copy, and distribute the Software for use with bona-fide Topaz electronic signature pads.
+
+
+4. YOU MAY NOT:
+(a) Use, distribute or modify the Topaz Software for use with tablets not supplied by Topaz Systems, Inc.
+(b) Reverse engineer, decompile, or dis-assemble, the Software.
+
+
+5. LIMITED WARRANTY:
+Topaz warrants to the original buyer only, that the media upon which the Software is recorded is free from defects in workmanship and material under normal use and service for a period of 30 days.
+
+
+6. EXCLUSIVE REMEDY:
+In the event of any defect or problem with the Software, Topaz's entire liability and your exclusive remedy shall be, at Topaz's option, either (a) the repair or replacement of the Software or (b) the refund of the price that was paid for the Software. The defective software, along with proof of payment, must be returned to Topaz within the terms of the warranty as set forth in Section 5 of this Agreement.
+
+
+7. LIMITATIONS ON DAMAGES:
+In no event shall Topaz be liable for damages whatsoever, including without limitation, damages for loss of profits, business interruption, loss of information, or other pecuniary loss, arising out of the use of or inability to use the Software even if Topaz or its suppliers, if any, have been notified of the possibility of such damages. In no event will Topaz's liability for any reason exceed the actual price paid for the license to use the Software.
+
+
+8. NO OTHER WARRANTIES:
+With respect to the Software, media, and written material, Topaz and its suppliers, if any, disclaim all warranties, other than the above Topaz warranty, including without limitation, the warranties of merchantability or fitness for a particular use. Topaz does not warrant the Software will meet your requirements or that the operations of the Software will be uninterrupted or error free.
+
+
+9. GOVERNING LAW AND GENERAL PROVISIONS:
+If any part of this Agreement is found void and unenforceable, it will not affect the validity of the balance of the Agreement, which shall remain valid and enforceable according to its terms. You agree that the Software will not be shipped, transferred, or exported into any country or used in any manner prohibited by the United States Export Administration Act or any other export laws, restrictions or regulations. This Agreement shall automatically terminate upon your failure to comply with its terms and you shall have no further right to use the Software in any way. This Agreement may only be modified in writing by an officer of Topaz. This Agreement will not be governed by the United Nations convention on contracts for the International sale of goods, the application of which is expressly excluded.
+
+
+10. PATENTS.  This product is protected under one or more of the following Patents:
+7,933,840 - "Electronic Signature Security System"
+7,876,930 - "Fingerprint Reader Combination"
+7,693,312 - "Method for Authenticating an Electronic Signature"
+7,526,108 - "Wireless Data Management System"
+7,190,815 - "Method for Authenticating an Electronic Signature"
+7,123,143 - "Wireless Signature Management System"
+6,972,754 - "Touchpad stylus having isolated low-mass contact element "
+6,307,955 - "Electronic Signature Management System"
+D532,009 - "Integrated signature pad and fingerprint reader"
+GB2430788 B - "Method of Authenticating an Electronic Signature"
+GB2436487 - "Electronic Signature Security System"

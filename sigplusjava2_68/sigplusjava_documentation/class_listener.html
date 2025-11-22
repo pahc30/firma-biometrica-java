@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+
+<TITLE>
+: Class  sigobj.addSigPlusListener
+</TITLE>
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../stylesheet.css" TITLE="Style">
+</HEAD>
+<BODY BGCOLOR="white">
+
+<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_top" href="(EmptyReference!)"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow" href="(EmptyReference!)"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><i>Topaz Systems, Inc.</i><br>
+					<i>SigPlus v2.41</i><EM>
+</EM></TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="class.html"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<B>NEXT CLASS</B></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="api.html" TARGET="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="REFilterInputStream.html" TARGET="_top"><B>NO FRAMES</B></A></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY: &nbsp;INNER&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL: &nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<!-- =========== END OF NAVBAR =========== -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2><font size="-1">com.topaz</font><BR>Interface SigDataEventHandler</H2>
+<PRE>
+java.lang.Object
+  |
+  +--java.awt.Component
+        |
+        +--java.awt.Canvas
+              |
+              +--com.gemtools.SigPlus
+                   |
+                    +--<b>SigDataEventHandler</b>
+</PRE>
+		<HR>
+		<P>public interface <b>SigDataEventHandler</b>
+		<DL>
+			<DT>extends com.topaz.SigPlus		</DL>
+		<P>
+		<HR>
+		<P>
+<!-- ======== INNER CLASS SUMMARY ======== -->
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary" href="(EmptyReference!)"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+				<TD><CODE><B><A HREF="#sigobj.addNewSigPlusListener">sigobj.addSigPlusListener</A></B>(new SigPlusListener)</CODE><BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This interface class can be implemented by any class who are interested in listening for the request.</TD>
+			</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary" href="(EmptyReference!)"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=2><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;public void</CODE></FONT></TD>
+<TD><a href="#handleKeyPadData">handleKeyPadData</a> (SigPlusEvent0 evt)<BR>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event that fires when keyPadHotSpot is hit</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;public void</CODE></FONT></TD>
+<TD><a href="#handleNewTabletData">handleNewTabletData</a> (SigPlusEvent0 evt)<BR>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not Implemented</TD>
+</TR>
+			<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;public void</CODE></FONT></TD>
+<TD><a href="#handleTabletTimerEvent">handleTabletTimerEvent</a> (SigPlusEvent0 evt)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Not Implemented&nbsp;&nbsp;</TD>
+</TR>
+		</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.io.FilterInputStream" href="(EmptyReference!)"><!-- --></A>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object" href="(EmptyReference!)"><!-- --></A>
+&nbsp;
+
+		<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail" href="(EmptyReference!)"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TD>
+</TR>
+</TABLE>
+
+<A NAME="REFilterInputStream(java.io.InputStream, gnu.regexp.RE, java.lang.String)" href="(EmptyReference!)"><!-- --></A><H3><a name="sigobj.addNewSigPlusListener"></a>sigobj.addNewSigPlusListener</H3>
+<PRE>public <B>sogobj.addNewSigPlusListener </B>(new SigPlusListener)</PRE>
+<DL>
+			<DD>Instantiates event listener to handle SigPlus events
+				<DL><DT><B>Parameters:</B>
+					<DD><code>SigPlusListener</code>- Event listener  
+			</DL>
+		</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail" href="(EmptyReference!)"><!-- --></A>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TD>
+</TR>
+</TABLE>
+
+<A NAME="read()" href="(EmptyReference!)"><!-- --></A><H3><a name="handleTabletTimerEvent"></a>handleTabletTimerEvent</H3>
+<PRE>
+public void <b>handleTabletTimerEvent</b>(SigPlusEvent0 evt)</PRE>
+		<DL>
+			<DD>Not Currently Implemented
+			</DD>
+		</DL>
+		<HR>
+		<A NAME="markSupported()" href="(EmptyReference!)"><!-- --></A><H3><a name="handleNewTabletData"></a>handleNewTabletData</H3>
+<PRE>
+public void <b>handleNewTabletData</b>(SigPlusEvent0 evt)</PRE>
+<DL>
+			<DD>Not Currently Implemented
+			</DD>
+		</DL>
+<HR>
+
+<A NAME="read(byte[], int, int)" href="(EmptyReference!)"><!-- --></A><H3><a name="handleKeyPadData"></a>handleKeyPadData</H3>
+<PRE>
+public void <b>hanleKetPadData</b>(SigPlusEvent0 evt)</PRE>
+		<DL>
+			<DD>Event fires whenever there is a hit in one of the KeyPad HotSpots set by <code>keyPadAddHotSpot</code>
+			<DL><DT><B>Parameters:</B>
+				<DD><code>evt</code>- Hit to KeyPadHotSpot
+			</DL>
+		</DL>
+	<HR>
+		<!-- ========== START OF NAVBAR ========== -->
+<A NAME="navbar_bottom" href="(EmptyReference!)"><!-- --></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow" href="(EmptyReference!)"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><i>Topaz Systems, &nbsp;Inc</i>.<br>
+					<i>SigPlus v2.41</i><EM>
+</EM></TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="class.html"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<B>NEXT CLASS</B></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="api.html" TARGET="_top"><B>FRAMES</B></A> &nbsp; <a href="class_listener.html">&nbsp;<B>NO FRAMES</B></a></FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY: &nbsp;INNER&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL: &nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<!-- =========== END OF NAVBAR =========== -->
+
+<HR>
+	<p><i>Copyright &copy; 2004 <a href="http://www.topazsystems.com">Topaz Systems</a>, Inc. All rights reserved. Use is subject to <a href="http://www.topazsystems.com/information/legal.htm">license terms</a>.</i></p>
+
+</BODY>
+</HTML>

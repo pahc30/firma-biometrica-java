@@ -1,0 +1,16 @@
+The simple applet demo in this zip is entitled SigPlusAppletDemo.java. You may certainly alter the calls to SigPlus, making use of the other java demos included in this zip for sample code, to get the functionality you are looking for. Once made and compiled, you will most likely want to sign your applet and adjust the java.policy file on the target to allow your applet to run on the client. At minimum, add (for Windows):
+
+grant
+{
+   permission java.lang.RuntimePermission "loadLibrary.SigUsb";    
+   permission java.util.PropertyPermission "java.home", "read";
+};
+
+(SigUsb.dll is required only if you are using a Topaz "-HSB" (USB) signature pad.
+
+SigPlus is dependent upon the SigPlus.jar, and the RXTXcomm.jar (plus the RXTXcomm's dependencies, see their web site for the most up-to-date information), as well as the SigUsb.dll (for Topaz USB-connected "-HSB" pads). SigUsb.dll will need to be in the PATH (for Windows support only, of course--I suggest System32), and the jars will need to be in the classpath as well as the jre\lib\ext folder (under Java).
+
+An applet tag example for your html:
+<applet code="SigPlusAppletDemo.class" width="500" height="100" archive="RXTXcomm.jar,SigPlus2_60.jar"></applet> 
+
+Once you capture the signature, there is a getSigString() function that will return the signature as a long alphanumeric ASCII hex string, which can easily be sent across the web. This is Topaz's format, and can be cryptographically bound to the data the signer has read and agreed to using AutoKey. Please refer to the SigPlusAppDemo in the SigPlus Java download for an example using AutoKey.

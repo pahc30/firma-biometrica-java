@@ -1,0 +1,72 @@
+----setTabletComPort() options----
+For Topaz USB-connected ("-HSB") pads, use:
+"HID1"
+
+For Topaz 9-pin serial pads (under Windows) use:
+"COMX"
+(where X is the port in question, for instance: COM1)
+
+For Linux and 9-pin serial pads, for instance:
+"/dev/ttyS0"
+
+
+
+
+----setTabletModel() options----
+1. TL(BK)460 and TL(BK)462:
+"SignatureGemLCD1X5"
+
+
+2. TS261:
+"SignatureGem1X5"
+
+
+3. TS751:
+"SignatureGem4X5"
+
+
+4. TL(BK)755-B and TL(BK)750-B:
+"SignatureGemLCD4X3New"
+
+*For TLBK755-BHSB and TLBK750-BHSB:
+"SignatureGemLCD4X3New"
+and
+setTabletBaudRate(38400)
+
+*For TLBK755SE-BHSB TLBK750SE-BHSB use:
+"SignatureGemLCD4X3New"
+and
+setTabletBaudRate(115200)
+
+
+5. TL(BK)766-B:
+"SignatureGemLCD4X5"
+
+*For TLBK766-BHSB, use:
+"SignatureGemLCD4X5"
+and
+setTabletBaudRate(38400)
+
+*For TLBK766SE-BHSB, use:
+"SignatureGemLCD4X5"
+and
+setTabletBaudRate(115200)
+
+
+6. TC912:
+"ClipGem"
+
+
+7. TC916:
+"ClipGemLGL"
+
+
+8. TLBK57GC
+"SigGemColor57"
+and
+setTabletBaudRate(115200)
+
+9. TLBK43LC
+"SigLiteColor43"
+and
+setTabletBaudRate(115200)

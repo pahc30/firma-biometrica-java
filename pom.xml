@@ -13,6 +13,42 @@
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
     <dependencies>
+                        <!-- Conector JDBC MySQL -->
+                        <dependency>
+                            <groupId>mysql</groupId>
+                            <artifactId>mysql-connector-java</artifactId>
+                            <version>8.0.33</version>
+                        </dependency>
+                <!-- Conector JDBC SQL Server -->
+                <dependency>
+                    <groupId>com.microsoft.sqlserver</groupId>
+                    <artifactId>mssql-jdbc</artifactId>
+                    <version>12.6.1.jre11</version>
+                </dependency>
         <!-- Dependencias a agregar: SDK Topaz, webcam, JDBC SQL Server -->
+        <!-- SDK Topaz SigPlus -->
+        <dependency>
+            <groupId>com.topaz</groupId>
+            <artifactId>sigplus</artifactId>
+            <version>2.68</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/SigPlus2_68.jar</systemPath>
+        </dependency>
+
+        <!-- RXTX para soporte de puertos seriales (requerido por Topaz) -->
+        <dependency>
+            <groupId>org.rxtx</groupId>
+            <artifactId>rxtx</artifactId>
+            <version>2.2pre2</version>
+            <scope>system</scope>
+        <systemPath>${project.basedir}/lib/RXTXcomm.jar</systemPath>
+        </dependency>
+
+        <dependency>
+    <groupId>com.github.sarxos</groupId>
+    <artifactId>webcam-capture</artifactId>
+    <version>0.3.12</version>
+</dependency>
+
     </dependencies>
 </project>
