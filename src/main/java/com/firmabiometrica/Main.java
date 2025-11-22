@@ -11,6 +11,23 @@ import java.awt.event.ActionListener;
 import java.sql.*;
 
 public class Main {
+        // Variables de conexión a la base de datos
+        private static String DB_URL = "";
+        private static String DB_USER = "";
+        private static String DB_PASS = "";
+
+        // Cargar configuración desde config.conf
+        static {
+            java.util.Properties props = new java.util.Properties();
+            try (java.io.FileInputStream fis = new java.io.FileInputStream("config.conf")) {
+                props.load(fis);
+                DB_URL = props.getProperty("DB_URL", DB_URL);
+                DB_USER = props.getProperty("DB_USER", DB_USER);
+                DB_PASS = props.getProperty("DB_PASS", DB_PASS);
+            } catch (Exception e) {
+                System.err.println("No se pudo leer config.conf, usando valores por defecto o vacíos.");
+            }
+        }
     // Usuario y clave estáticos
     private static final String USUARIO = "admin";
     private static final String CLAVE = "1234";
@@ -77,10 +94,7 @@ public class Main {
 
     // Ventana principal tras login
     private static void mostrarVentanaPrincipal() {
-        // Parámetros de conexión MySQL (ajustar según tu entorno)
-        final String DB_URL = "jdbc:mysql://localhost:3306/bd_topaz?useSSL=false&serverTimezone=UTC";
-        final String DB_USER = "root";
-        final String DB_PASS = "";
+        // Usa las variables de clase DB_URL, DB_USER, DB_PASS cargadas desde config.conf
 
         JFrame mainFrame = new JFrame("Registro de Persona");
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -331,9 +345,7 @@ public class Main {
     private static void mostrarFechasPrevias(String dni, JTextArea area) {
         area.setText("");
         if (dni.isEmpty()) return;
-        final String DB_URL = "jdbc:mysql://localhost:3306/bd_topaz?useSSL=false&serverTimezone=UTC";
-        final String DB_USER = "root";
-        final String DB_PASS = "";
+        // Usa las variables de clase DB_URL, DB_USER, DB_PASS cargadas desde config.conf
         try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
             String sql = "SELECT fecha FROM personas WHERE dni = ? ORDER BY fecha DESC";
             try (PreparedStatement ps = conn.prepareStatement(sql)) {
