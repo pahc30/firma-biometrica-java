@@ -316,14 +316,21 @@ public class Main {
                 return;
             }
             try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
-                String sql = "INSERT INTO personas (dni, nombres, apellidos, firma, huella, foto, fecha) VALUES (?, ?, ?, ?, ?, ?, NOW())";
+                // 1. Registrar/actualizar paciente en 'patients'
+                String upsertPatient = "INSERT INTO patients (dni_id, name) VALUES (?, ?) ON DUPLICATE KEY UPDATE name = VALUES(name)";
+                try (PreparedStatement ps = conn.prepareStatement(upsertPatient)) {
+                    ps.setString(1, dni);
+                    ps.setString(2, nombres + " " + apellidos);
+                    ps.executeUpdate();
+                }
+                // 2. Guardar registro biométrico en 'entry_data'
+                String sql = "INSERT INTO entry_data (patient_dni_id, visit_date, patient_img, signature_img, signature_jpgimg, signature_img2, signature) VALUES (?, NOW(), ?, ?, NULL, NULL, ?)";
                 try (PreparedStatement ps = conn.prepareStatement(sql)) {
                     ps.setString(1, dni);
-                    ps.setString(2, nombres);
-                    ps.setString(3, apellidos);
-                    ps.setBytes(4, firma);
-                    ps.setBytes(5, huella);
-                    ps.setBytes(6, foto);
+                    ps.setBytes(2, foto);
+                    ps.setBytes(3, firma);
+                    // Puedes adaptar para guardar otros formatos si los tienes
+                    ps.setBytes(4, huella); // Guardamos la huella en 'signature' por compatibilidad, puedes crear otro campo si lo prefieres
                     int res = ps.executeUpdate();
                     if (res > 0) {
                         JOptionPane.showMessageDialog(mainFrame, "Registro guardado correctamente.", "Éxito", JOptionPane.INFORMATION_MESSAGE);
@@ -347,13 +354,13 @@ public class Main {
         if (dni.isEmpty()) return;
         // Usa las variables de clase DB_URL, DB_USER, DB_PASS cargadas desde config.conf
         try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASS)) {
-            String sql = "SELECT fecha FROM personas WHERE dni = ? ORDER BY fecha DESC";
+            String sql = "SELECT visit_date FROM entry_data WHERE patient_dni_id = ? ORDER BY visit_date DESC";
             try (PreparedStatement ps = conn.prepareStatement(sql)) {
                 ps.setString(1, dni);
                 try (ResultSet rs = ps.executeQuery()) {
                     StringBuilder sb = new StringBuilder();
                     while (rs.next()) {
-                        sb.append(rs.getString("fecha")).append("\n");
+                        sb.append(rs.getString("visit_date")).append("\n");
                     }
                     if (sb.length() > 0) {
                         area.setText(sb.toString());
